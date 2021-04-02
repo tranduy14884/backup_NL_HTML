@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"><script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/hotel-list/hotel-list-search.css">
+    <link rel="stylesheet" href="../../css/hotel-list/hotel-list-body.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+     <!-------------------------------- header --------------------------------->
+     <div class="container header">
+        <div class="container-fluid">
+            <div class="flex-container header-1">
+                <div class="icon-home">
+                    <img src="../../img/header/icon-home.png" alt="icon-home">
+                </div>
+                <ul class="info-home">
+                    <li><a href="#">Tra cứu đơn hàng</a></li>
+                    <li class="info-phone"><a href="#"><span><i class="fa fa-phone" aria-hidden="true"></i></span>12345678</a></li>
+                   <li>
+                    <div class="info-login">
+                        <li><p>Đăng nhập</p></li>
+                        <li><p style="background-color:#ff8917 ;">Đăng ký</p></li>
+                    </div>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="container-fluid container-navbar">
+            <div class="flex-container">
+                <ul class="header-2">
+                    <li class="tab-item "><a href="../index.html"><span><i class="fab fa-asymmetrik"></i></span>Săn giá rẻ</a></li>
+                    <li class="tab-item tab-active"><a href="../hotel/index.html"><span><i class="fa fa-building" aria-hidden="true"></i></span>Khách sạn</a></li>
+                    <li class="tab-item"><a href="#"><span><i class="fa fa-plane" aria-hidden="true"></i></span>Vé máy bay</a></li>
+                    <li class="tab-item"><a href="#"><span><i class="fa fa-bed" aria-hidden="true"></i></span>Nhà nghỉ</a></li>
+                    <li class="tab-item"><a href="#"><span><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></span>Doanh nghiệp</a></li>
+                    <li class="tab-item"><a href="#"><span><i class="fa fa-archive" aria-hidden="true"></i></span>Cẩm nang</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------    main  ------------------------------>
+    <div class="hotel-list-main" style="background-color: #fafafa;padding-top: 20px;">
+        <div class="container">
+            <!---------------------- hotel-list-search ------------------->
+            <div class="hotel-list-search">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Nhập địa điểm">
+                            <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                            <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy"> <input class="form-control" readonly="" type="text">
+                                 <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> 
+                            </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group" >
+                            <input type="text" class="form-control" placeholder="Nhập số ngày thuê">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="input-group hotel-list-search-btn">
+                           <button class="btn btn-warning">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!---------------------- hotel-list-body ------------------->
+             
+            <div class="hotel-list-body d-flex" >
+                <div class="hotel-list-filter-tab">
+                    <div>
+                        <div class="hotel-list-list-group-tab d-flex flex-column">
+                            <div class="group-tab-item">
+                                <p>Xem giá</p>
+                            </div>
+                            <div class="group-tab-item">
+                                <p>Mức giá</p>
+                                <div class="group-tab-content">
+                                    <div class="form-group form-check d-flex flex-column">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500d"> Dưới 500.000đ
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500-1000"> 500.000đ - 1.000.000đ
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="1000-2000"> 1.000.000đ - 2.000.000đ
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="2000-5000"> 2.000.000đ - 5.000.000
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-tab-item">
+                                <p>Xếp hạng khách sạn</p>
+                                <div class="group-tab-content">
+                                    <div class="form-group form-check d-flex flex-column">
+                                        <label class="form-check-label rank">
+                                            <input class="form-check-input" type="checkbox" name="500d"> <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <label class="form-check-label rank">
+                                            <input class="form-check-input" type="checkbox" name="500-1000"><i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <label class="form-check-label rank">
+                                            <input class="form-check-input" type="checkbox" name="1000-2000"><i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <label class="form-check-label rank">
+                                            <input class="form-check-input" type="checkbox" name="2000-5000"><i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <label class="form-check-label rank">
+                                            <input class="form-check-input" type="checkbox" name="2000-5000"><i class="fas fa-star"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-tab-item">
+                                <p>Quận huyện</p>
+                                <div class="group-tab-content">
+                                    <div class="form-group form-check d-flex flex-column">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500d"> Option 1
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500-1000"> Option 2
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-tab-item">
+                                <p>Tiện nghi khách sạn </p>
+                                <div class="group-tab-content">
+                                    <div class="form-group form-check d-flex flex-column">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500d"> Hồ bơi
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500-1000"> Spa
+                                        </label>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="500-1000"> Bồn nước nóng
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel-list-content">
+                    <p>Trang chủ > <span>Khách sạn tại Thành phố Nha Trang, Khánh Hòa có 87 khách sạn có phòng</span></p>
+                    <h3>Khách sạn tại Thành phố Nha Trang, Khánh Hòa</h3>
+                    <div class="hotel-list d-flex flex-column">
+                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                            <div class="item-left d-flex flex-row">
+                                <div class="item-img">
+                                    <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1607680588_1211.jpg" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <h5>Khách sạn Imperial Nha Trang</h5>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p><span><i class="fas fa-map-marker-alt"></i></span> 20 Trần Phú, Vĩnh Nguyên, Thành phố Nha Trang, Khánh Hòa, Việt Nam</p>
+                                    <p class="icon-suport">
+                                        <i class="fas fa-wifi" title="Wifi"></i>
+                                        <i class="fas fa-swimmer"  title="Bể bơi"></i>
+                                        <i class="fas fa-utensils"  title="Nhà hàng"></i>
+                                        <i class="fas fa-car"  title="Bãi đậu xe"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-right d-flex flex-column">
+                                <div class="item-rank d-flex flex-row justify-content-end">
+                                    <div class="rank-text">
+                                        <p>Rất tốt</p>
+                                        <p>(39 đánh giá)</p>
+                                    </div>
+                                    <div class="rank-point">
+                                        <p><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-star"></i><i class="fas fa-angle-left"></i><i class="fas fa-angle-left"></i></p>
+                                        <p>8.4</p>
+                                    </div>
+                                </div>
+                                <div class="item-price">
+                                    <p>850.000đ<span>-40%</span></p>
+                                    <p>510.000đ</p>
+                                    <button>Xem phòng</button>
+                                    <p>Chỉ còn 4 phòng</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+            </div>
+        </div>
+    <!----------------------------------- Footer ------------------------------>
+    <div class="container-fuild">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-middle">
+                    <p>Khách sạn theo tỉnh thành</p>
+                    <ul class="footer-list">
+                        <li><a href="#">Khách sạn An Giang</a></li>
+                        <li><a href="#">Khách sạn Bà Rịa - Vũng Tàu</a></li>
+                        <li><a href="#">Khách sạn Bắc Giang</a></li>
+                        <li><a href="#">Khách sạn Bắc Kạn</a></li>
+                        <li><a href="#">Khách sạn Bạc Liêu</a></li>
+                        <li><a href="#">Khách sạn Bắc Ninh</a></li>
+                        <li><a href="#">Khách sạn Bến Tre</a></li>
+                        <li><a href="#">Khách sạn Cần Thơ</a></li>
+                        <li><a href="#">Khách sạn Đà Nẵng</a></li>
+                        <li><a href="#">Khách sạn Hải Phòng</a></li>
+                        <li><a href="#">Khách sạn Hà Nội</a></li>
+                        <li><a href="#">Khách sạn TP HCM</a></li>
+                        <li><a href="#">Khách sạn Kiên Giang</a></li>
+                        <li><a href="#">Khách sạn Cà Mau</a></li>
+                        <li><a href="#">Khách sạn Bình Thuận</a></li>
+                        <li><a href="#">Khách sạn Đồng Nai</a></li>
+                        <li><a href="#">Khách sạn Đồng Tháp</a></li>
+                        <li><a href="#">Khách sạn Phú Thọ</a></li>
+                        <li><a href="#">Khách sạn Ninh Thuận</a></li>
+                        <li><a href="#">Khách sạn Ninh Bình</a></li>
+                        <li><a href="#">Khách sạn Nghệ An</a></li>
+                        <li><a href="#">Khách sạn Khánh Hòa</a></li>
+                        <li><a href="#">Khách sạn Tây Ninh</a></li>
+                        <li><a href="#">Khách sạn Thừa Thiên Huế</a></li>
+                        <li><a href="#">Khách sạn Vĩnh Long</a></li>
+                        <li><a href="#">Khách sạn Quảng Nam</a></li>
+                        <li><a href="#">Khách sạn Kon Tum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Bản quyền © 2021 Vntrip.vn</p>
+                <div class="group-bottom">
+                    <a href="#"><img src="http://simpleicon.com/wp-content/uploads/facebook-2.png" alt="" width="40px"><span>Facebook</span></a>
+                    <a href="#"><img src="https://icon-library.com/images/instagram-png-icon/instagram-png-icon-1.jpg" alt="Instagram" width="30px">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        $(function () {  
+        $("#datepicker").datepicker({         
+        autoclose: true,         
+        todayHighlight: true 
+        }).datepicker('update', new Date());
+        });
+        </script>
+    <script src="../../js/header.js" type="text/javascript"></script>
+
+</body>
+</html>
