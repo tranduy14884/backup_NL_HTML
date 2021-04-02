@@ -1,7 +1,6 @@
 .hotel-search>.container{
     border-radius: 5px ;
-  
-    box-shadow: 10px 15px 15px #cccccc;
+    box-shadow:  10px 15px 15px #cccccc;
     position: relative;
     margin-top: -40px;
     background-color: white;
@@ -39,5 +38,11 @@
 .hotel-search>.container>.row>.active>a{
     color: #ff751a;
 }
-
+#datepicker{
+    width:180px; 
+    margin: 0 20px 20px 0px;
+}
+#datepicker > span:hover{
+    cursor: pointer;
+}
 

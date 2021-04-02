@@ -3,7 +3,6 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         dots:false,
-        autoplayTimeout: 1500,
         smartSpeed: 1500,
         animateIn: 'linear',
         animateOut: 'linear',

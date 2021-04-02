@@ -146,6 +146,7 @@
     width: 50%;
     align-items: center;
 }
+/* datepicker */
 
 @media (max-width:820px){
     .search-item>i {

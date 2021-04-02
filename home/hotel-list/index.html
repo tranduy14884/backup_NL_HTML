@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../css/hotel-list/hotel-list-search.css">
     <link rel="stylesheet" href="../../css/hotel-list/hotel-list-body.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
 
 </head>
 <body>
@@ -89,7 +90,7 @@
              </div>
             <!---------------------- hotel-list-body ------------------->
              
-            <div class="hotel-list-body d-flex" >
+            <div class="hotel-list-body d-flex justify-content-between" >
                 <div class="hotel-list-filter-tab">
                     <div>
                         <div class="hotel-list-list-group-tab d-flex flex-column">
@@ -192,7 +193,7 @@
                                 <div class="item-content">
                                     <h5>Khách sạn Imperial Nha Trang</h5>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                    <p><span><i class="fas fa-map-marker-alt"></i></span> 20 Trần Phú, Vĩnh Nguyên, Thành phố Nha Trang, Khánh Hòa, Việt Nam</p>
+                                    <p class="item-title"><span><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i></span>20 Trần Phú, Vĩnh Nguyên, Thành phố Nha Trang, Khánh Hòa, Việt Nam</p>
                                     <p class="icon-suport">
                                         <i class="fas fa-wifi" title="Wifi"></i>
                                         <i class="fas fa-swimmer"  title="Bể bơi"></i>
@@ -213,10 +214,118 @@
                                     </div>
                                 </div>
                                 <div class="item-price">
-                                    <p>850.000đ<span>-40%</span></p>
-                                    <p>510.000đ</p>
+                                    <span class="old-price">850.000đ</span><span class="discount-price">-40%</span>
+                                    <p class="price">510.000đ</p>
                                     <button>Xem phòng</button>
-                                    <p>Chỉ còn 4 phòng</p>
+                                    <p>Chỉ còn 4 phòng !</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                            <div class="item-left d-flex flex-row">
+                                <div class="item-img">
+                                    <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/69753/img_max/69753_1580543438__n5_1428-min.jpg" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <h5>Khách sạn V Nha Trang</h5>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p class="item-title"><span><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i></span>8 Hùng Vương, Lộc Thọ, Thành phố Nha Trang, Khanh Hoa</p>
+                                    <p class="icon-suport">
+                                        <i class="fas fa-wifi" title="Wifi"></i>
+                                        <i class="fas fa-swimmer"  title="Bể bơi"></i>
+                                        <i class="fas fa-utensils"  title="Nhà hàng"></i>
+                                        <i class="fas fa-car"  title="Bãi đậu xe"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-right d-flex flex-column">
+                                <div class="item-rank d-flex flex-row justify-content-end">
+                                    <div class="rank-text">
+                                        <p>Rất tốt</p>
+                                        <p>(32 đánh giá)</p>
+                                    </div>
+                                    <div class="rank-point">
+                                        <p><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-star"></i><i class="fas fa-angle-left"></i><i class="fas fa-angle-left"></i></p>
+                                        <p>8.2</p>
+                                    </div>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">1.550.000đ</span><span class="discount-price">-70%</span>
+                                    <p class="price">460.000đ</p>
+                                    <button>Xem phòng</button>
+                                    <p>Chỉ còn 7 phòng !</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                            <div class="item-left d-flex flex-row">
+                                <div class="item-img">
+                                    <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/9950/img_max/9950_1508900920__n5_0621-hdr.jpg" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <h5>Maple Hotel & Apartment</h5>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p class="item-title"><span><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i></span>16 Tôn Đản, Lộc Thọ, Thành phố Nha Trang, Khánh Hòa, Vietnam</p>
+                                    <p class="icon-suport">
+                                        <i class="fas fa-wifi" title="Wifi"></i>
+                                        <i class="fas fa-swimmer"  title="Bể bơi"></i>
+                                        <i class="fas fa-utensils"  title="Nhà hàng"></i>
+                                        <i class="fas fa-car"  title="Bãi đậu xe"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-right d-flex flex-column">
+                                <div class="item-rank d-flex flex-row justify-content-end">
+                                    <div class="rank-text">
+                                        <p> tốt</p>
+                                        <p>(35 đánh giá)</p>
+                                    </div>
+                                    <div class="rank-point">
+                                        <p><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-star"></i><i class="fas fa-angle-left"></i><i class="fas fa-angle-left"></i></p>
+                                        <p>7.9</p>
+                                    </div>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">2.000.000đ</span><span class="discount-price">-78%</span>
+                                    <p class="price">440.000đ</p>
+                                    <button>Xem phòng</button>
+                                    <p>Chỉ còn 2 phòng !</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                            <div class="item-left d-flex flex-row">
+                                <div class="item-img">
+                                    <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/11822/img_max/11822_1533117709_premier_dbl_with_balcony_(3).jpg" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <h5>Khách sạn Bonjour Nha Trang</h5>
+                                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                    <p class="item-title"><span><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i></span>17/2A-B-C Nguyễn Thị Minh Khai, P. Lộc Thọ, TP. Nha Trang, Khánh Hòa</p>
+                                    <p class="icon-suport">
+                                        <i class="fas fa-wifi" title="Wifi"></i>
+                                        <i class="fas fa-swimmer"  title="Bể bơi"></i>
+                                        <i class="fas fa-utensils"  title="Nhà hàng"></i>
+                                        <i class="fas fa-car"  title="Bãi đậu xe"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-right d-flex flex-column">
+                                <div class="item-rank d-flex flex-row justify-content-end">
+                                    <div class="rank-text">
+                                        <p>Rất tốt</p>
+                                        <p>(39 đánh giá)</p>
+                                    </div>
+                                    <div class="rank-point">
+                                        <p><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-star"></i><i class="fas fa-angle-left"></i><i class="fas fa-angle-left"></i></p>
+                                        <p>8.7</p>
+                                    </div>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">1.400.000đ</span><span class="discount-price">-60%</span>
+                                    <p class="price">560.000đ</p>
+                                    <button>Xem phòng</button>
+                                    <p>Chỉ còn 6 phòng !</p>
                                 </div>
                             </div>
                         </a>
@@ -225,6 +334,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <!----------------------------------- Footer ------------------------------>
     <div class="container-fuild">
         <footer class="footer">
