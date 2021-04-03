@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -40,8 +39,8 @@
         </div>
     </div>
     <hr>
-    <div class="container">
-        <div class="container-fluid container-navbar">
+    <div class="container-fluid" style="border-bottom: 1px solid #e6e6e6;margin-bottom: 20px;">
+        <div class="container container-navbar" >
             <div class="flex-container">
                 <ul class="header-2">
                     <li class="tab-item "><a href="../index.html"><span><i class="fab fa-asymmetrik"></i></span>Săn giá rẻ</a></li>
@@ -185,7 +184,7 @@
                     <p>Trang chủ > <span>Khách sạn tại Thành phố Nha Trang, Khánh Hòa có 87 khách sạn có phòng</span></p>
                     <h3>Khách sạn tại Thành phố Nha Trang, Khánh Hòa</h3>
                     <div class="hotel-list d-flex flex-column">
-                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                        <a href="../hotel-detail/index.html" class="hotel-list-item d-flex flex-row justify-content-between">
                             <div class="item-left d-flex flex-row">
                                 <div class="item-img">
                                     <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1607680588_1211.jpg" alt="">
@@ -221,7 +220,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                        <a href="../hotel-detail/index.html" class="hotel-list-item d-flex flex-row justify-content-between">
                             <div class="item-left d-flex flex-row">
                                 <div class="item-img">
                                     <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/69753/img_max/69753_1580543438__n5_1428-min.jpg" alt="">
@@ -257,7 +256,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                        <a href="../hotel-detail/index.html" class="hotel-list-item d-flex flex-row justify-content-between">
                             <div class="item-left d-flex flex-row">
                                 <div class="item-img">
                                     <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/9950/img_max/9950_1508900920__n5_0621-hdr.jpg" alt="">
@@ -293,7 +292,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="hotel-list-item d-flex flex-row justify-content-between">
+                        <a href="../hotel-detail/index.html" class="hotel-list-item d-flex flex-row justify-content-between">
                             <div class="item-left d-flex flex-row">
                                 <div class="item-img">
                                     <img src="https://i.vntrip.vn/200x200/smart/https://statics.vntrip.vn/data-v2/hotels/11822/img_max/11822_1533117709_premier_dbl_with_balcony_(3).jpg" alt="">
@@ -381,14 +380,8 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript">
-        $(function () {  
-        $("#datepicker").datepicker({         
-        autoclose: true,         
-        todayHighlight: true 
-        }).datepicker('update', new Date());
-        });
-        </script>
+    <script src="../../js/datepicker.js"></script>
+
     <script src="../../js/header.js" type="text/javascript"></script>
 
 </body>
